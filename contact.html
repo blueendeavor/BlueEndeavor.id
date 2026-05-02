@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Order — Blue Endeavor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="logo-mark">BE</span>
+        <span class="logo-text">Blue Endeavor</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#how-it-works">How It Works</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn btn--nav active">Order Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Order Now</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero__bg"></div>
+    <div class="container">
+      <span class="section-tag">Get In Touch</span>
+      <h1>Order Yours or<br/><em>Ask Us Anything</em></h1>
+      <p>Fill in the form below and we'll get back to you within 24 hours. Custom orders and bulk inquiries welcome!</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- FORM -->
+        <div class="contact-form-wrapper">
+          <h2>Send Us a Message</h2>
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <!--
+              HOW TO CONNECT FORMSPREE (no backend needed):
+              1. Go to https://formspree.io and create a free account
+              2. Create a new form — copy the form ID
+              3. Replace "YOUR_FORM_ID" in the action attribute above
+              4. That's it! Submissions land in your email.
+            -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" name="first_name" required placeholder="Andi" />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="last_name" placeholder="Pratama" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="blueendeavor.id@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="phone">WhatsApp / Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+62 823 4208 0773" />
+            </div>
+            <div class="form-group">
+              <label for="product">Interested In</label>
+              <select id="product" name="product">
+                <option value="">-- Select a product --</option>
+                <option value="pro">BE Smart Tumbler Pro (ESP32)</option>
+                <option value="custom">Custom / Bulk Order</option>
+                <option value="other">Just a question</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="qty">Quantity</label>
+              <input type="number" id="qty" name="quantity" min="1" placeholder="1" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required rows="5" placeholder="Tell us what you need, any custom requests, or just say hi!"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 2L15 22 11 13 2 9l20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div id="formFeedback" class="form-feedback" style="display:none;"></div>
+          </form>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+          <h2>Other Ways to Reach Us</h2>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/6282342080773" target="_blank">+62 823 4208 0773</a>
+              <p>Fastest response — usually within 1 hour</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/>
+                <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:blueendeavor.id@gmail.com">blueendeavor.id@gmail.com</a>
+              <p>For formal inquiries and bulk orders</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Instagram</h4>
+              <a href="https://instagram.com/blueendeavor" target="_blank">@blueendeavor</a>
+              <p>See our latest builds and customer posts</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <span>Sidoarjo, East Java, Indonesia</span>
+              <p>Shipping nationwide &amp; international</p>
+            </div>
+          </div>
+
+          <div class="faq-box">
+            <h3>Quick FAQ</h3>
+            <div class="faq-item">
+              <strong>How long does shipping take?</strong>
+              <p>3–7 days within Indonesia. International shipping unavailable, contact us for rates.</p>
+            </div>
+            <div class="faq-item">
+              <strong>Can I request custom face animations?</strong>
+              <p>Yes! Custom animation packs are available for bulk orders of 5+ units.</p>
+            </div>
+            <div class="faq-item">
+              <strong>Is there a warranty?</strong>
+              <p>All tumblers come with a 6-month hardware warranty and lifetime firmware support.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="logo-mark">BE</span>
+          <span class="logo-text">Blue Endeavor</span>
+          <p>Smart tumblers with interactive OLED faces, temperature sensing, and hydration reminders.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Pages</h4>
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">TK</a>
+            <a href="#" class="social-icon">SP</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Blue Endeavor. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue Endeavor — Smart Tumbler</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="logo-mark">BE</span>
+        <span class="logo-text">Blue Endeavor</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn btn--nav">Order Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Order Now</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__grid"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="badge-dot"></span>
+        Smart Hydration Technology
+      </div>
+      <h1 class="hero__title">
+        Your Tumbler<br/>
+        <em>Thinks.</em><br/>
+        <span class="title-accent">Feels. Reminds.</span>
+      </h1>
+      <p class="hero__sub">
+        Meet the world's first interactive face tumbler — powered by ESP32 &amp; Arduino, live temperature display, and a companion that reminds you to drink.
+      </p>
+      <div class="hero__cta">
+        <a href="products.html" class="btn btn--primary">Shop Now</a>
+        <a href="#how-it-works" class="btn btn--ghost">See How It Works</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num">NTC</span>
+          <span class="stat__label">Temp Sensor</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">OLED</span>
+          <span class="stat__label">Live Display</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">ESP32</span>
+          <span class="stat__label">Smart Brain</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="tumbler-showcase">
+        <div class="tumbler-card">
+          <!-- Replace src with your product image -->
+          <img src="images/tumbler-hero.png" alt="Blue Endeavor Smart Tumbler" class="tumbler-img" onerror="this.style.display='none'" />
+          <div class="tumbler-placeholder">
+            <div class="oled-face">
+              <div class="oled-eyes">
+                <div class="eye eye--left"><div class="pupil"></div></div>
+                <div class="eye eye--right"><div class="pupil"></div></div>
+              </div>
+              <div class="oled-mouth"></div>
+              <div class="oled-temp">28°C</div>
+            </div>
+          </div>
+        </div>
+        <div class="tumbler-ring"></div>
+        <div class="tumbler-ring tumbler-ring--2"></div>
+      </div>
+    </div>
+    <a href="#features" class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Why Blue Endeavor</span>
+        <h2>Engineered to<br/><em>Keep You Hydrated</em></h2>
+      </div>
+      <div class="features__grid">
+
+        <div class="feature-card feature-card--large">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+              <circle cx="17" cy="20" r="4" fill="currentColor"/>
+              <circle cx="31" cy="20" r="4" fill="currentColor"/>
+              <path d="M16 30 Q24 38 32 30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            </svg>
+          </div>
+          <h3>Interactive OLED Face</h3>
+          <p>A real-time animated face on your tumbler reacts to temperature, reminds you to drink, and keeps you company all day long.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8 L24 32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="36" r="6" stroke="currentColor" stroke-width="2"/>
+              <path d="M18 16 L10 16 M30 16 L38 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M18 24 L14 24 M30 24 L34 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Live Temp Display</h3>
+          <p>NTC temperature sensor reads your drink's heat in real time — always know if your coffee is too hot or your water is perfectly chilled.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 14 L24 24 L32 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Drink Reminders</h3>
+          <p>Smart interval reminders displayed on the OLED face gently nudge you to stay hydrated throughout the day.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="10" width="28" height="28" rx="6" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 24 L22 30 L32 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>ESP32 / Arduino Nano</h3>
+          <p>Built on battle-tested microcontrollers for reliability, low power consumption, and future software updates.</p>
+        </div>
+
+        <div class="feature-card feature-card--accent">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 36 C12 20 24 8 24 8 C24 8 36 20 36 36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M18 36 C18 26 24 18 24 18 C24 18 30 26 30 36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Hydration Tracking</h3>
+          <p>Monitor your daily water intake and let your tumbler celebrate your progress with expressive face animations.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-head section-head--light">
+        <span class="section-tag">Technology</span>
+        <h2>How It <em>Works</em></h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">01</div>
+          <div class="step__body">
+            <h3>Temperature Detected</h3>
+            <p>The NTC sensor reads your drink's temperature every few seconds and feeds data to the microcontroller.</p>
+          </div>
+        </div>
+        <div class="step-divider"></div>
+        <div class="step">
+          <div class="step__num">02</div>
+          <div class="step__body">
+            <h3>Brain Processes</h3>
+            <p>The ESP32 / Arduino Nano processes the temperature data and checks your last-drink timestamp.</p>
+          </div>
+        </div>
+        <div class="step-divider"></div>
+        <div class="step">
+          <div class="step__num">03</div>
+          <div class="step__body">
+            <h3>Face Reacts</h3>
+            <p>The OLED display renders a live animated face — happy when you drink, worried when you haven't, showing exact temp.</p>
+          </div>
+        </div>
+        <div class="step-divider"></div>
+        <div class="step">
+          <div class="step__num">04</div>
+          <div class="step__body">
+            <h3>You Stay Hydrated</h3>
+            <p>Timely reminders and friendly nudges keep you on track with your daily hydration goals — effortlessly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT PREVIEW -->
+  <section class="product-preview">
+    <div class="container">
+      <div class="preview-inner">
+        <div class="preview-text">
+          <span class="section-tag">Our Product</span>
+          <h2>One Tumbler.<br/><em>Infinite Personality.</em></h2>
+          <p>Every Blue Endeavor tumbler is hand-assembled and quality-tested. The OLED face is fully customizable — choose from multiple expression themes.</p>
+          <a href="products.html" class="btn btn--primary">View All Products</a>
+        </div>
+        <div class="preview-images">
+          <!-- Replace with your product images -->
+          <div class="preview-img-card preview-img-card--main">
+            <img src="produk.jpeg" alt="Smart Tumbler Front" onerror="this.parentElement.classList.add('img-placeholder')" />
+            <div class="img-placeholder-text">Preview</div>
+          </div>
+          <div class="preview-img-card preview-img-card--side">
+            <img src="logo.jpeg" alt="Smart Tumbler Side" onerror="this.parentElement.classList.add('img-placeholder')" />
+            <div class="img-placeholder-text">Preview</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Reviews</span>
+        <h2>What People <em>Say</em></h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"This is the most unique tumbler I've ever owned. The face actually made me smile every morning — and I've been drinking way more water."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div>
+              <strong>Andi Pratama</strong>
+              <span>Jakarta</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card testimonial-card--featured">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"The temperature display is super useful. I always burned my tongue before — now the face warns me when it's too hot. Genius product!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div>
+              <strong>Budi Santoso</strong>
+              <span>Sidoarjo</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"My kids love it. They actually fight over who gets to use the tumbler with the sad face when they forget to drink. Blue Endeavor nailed it."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">B</div>
+            <div>
+              <strong>Budi Santoso</strong>
+              <span>Bandung</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner">
+        <h2>Ready to Meet Your<br/><em>New Favourite Tumbler?</em></h2>
+        <p>Order yours today and experience smart hydration with personality.</p>
+        <a href="contact.html" class="btn btn--white">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="logo-mark">BE</span>
+          <span class="logo-text">Blue Endeavor</span>
+          <p>Smart tumblers with interactive OLED faces, temperature sensing, and hydration reminders. Engineered with passion.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Pages</h4>
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__links">
+          <h4>Tech</h4>
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+        </div>
+        <div class="footer__social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram" class="social-icon">IG</a>
+            <a href="#" aria-label="TikTok" class="social-icon">TK</a>
+            <a href="#" aria-label="Shopee" class="social-icon">SP</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Blue Endeavor. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

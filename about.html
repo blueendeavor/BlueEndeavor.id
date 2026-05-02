@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Blue Endeavor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="logo-mark">BE</span>
+        <span class="logo-text">Blue Endeavor</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#how-it-works">How It Works</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html" class="btn btn--nav">Order Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Order Now</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero__bg"></div>
+    <div class="container">
+      <span class="section-tag">Our Story</span>
+      <h1>Born From a Simple<br/><em>Idea</em></h1>
+      <p>What if your tumbler could tell you when your water was too hot — and remind you to drink?</p>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story-section">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-text">
+          <span class="section-tag">The Beginning</span>
+          <h2>From Tinkering to<br/><em>Product</em></h2>
+          <p>Blue Endeavor started as a late-night experiment — an Arduino Nano, a tiny OLED screen, an NTC sensor, and a question: <em>can we make a tumbler feel alive?</em></p>
+          <p>The first prototype had a blinking face that smiled when you drank and looked sad when you forgot. We showed it to friends. They laughed — then immediately asked where they could buy one.</p>
+          <p>That was the moment Blue Endeavor was born. We refined the hardware, improved the firmware, upgraded to ESP32 for richer features, and started building tumblers that people genuinely connect with.</p>
+        </div>
+        <div class="story-image">
+          <!-- Replace with your workshop/team image -->
+          <div class="story-img-wrapper">
+            <img src="test.jpeg" alt="Blue Endeavor Workshop" onerror="this.parentElement.classList.add('img-fallback-tall')" />
+            <div class="story-img-caption">Our first prototype, 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="values-section">
+    <div class="container">
+      <div class="section-head section-head--light">
+        <span class="section-tag">Our Values</span>
+        <h2>What We <em>Stand For</em></h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-num">01</div>
+          <h3>Human-First Design</h3>
+          <p>Technology should feel approachable and warm. Every face animation and reminder is designed to put a smile on your face.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-num">02</div>
+          <h3>Genuine Engineering</h3>
+          <p>No shortcuts. We use quality NTC sensors, proven microcontrollers, and double-wall stainless steel that lasts.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-num">03</div>
+          <h3>Hydration Matters</h3>
+          <p>Most people are chronically dehydrated. We built a product that makes drinking water something to look forward to.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-num">04</div>
+          <h3>Local, With Pride</h3>
+          <p>Proudly made in Indonesia. Every tumbler is hand-assembled, tested, and shipped with care from our home base.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">The People</span>
+        <h2>The Team Behind<br/><em>Blue Endeavor</em></h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <!-- Replace with real team photo -->
+          <div class="team-card__photo">
+            <img src="andra.jpeg" alt="Founder" onerror="this.parentElement.classList.add('team-avatar-fallback')" />
+            <div class="team-avatar-letter">F</div>
+          </div>
+          <h3>Founder &amp; Engineer</h3>
+          <span class="team-role">Hardware &amp; Firmware</span>
+          <p>The brain behind the OLED faces and the temperature sensing magic. Obsessed with making electronics feel human.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__photo">
+            <img src="nijar.jpeg" alt="Designer" onerror="this.parentElement.classList.add('team-avatar-fallback')" />
+            <div class="team-avatar-letter">D</div>
+          </div>
+          <h3>Product Designer</h3>
+          <span class="team-role">Visual &amp; UX</span>
+          <p>Responsible for every face expression, UI animation, and the aesthetic look of our tumblers. Makes the ordinary extraordinary.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__photo">
+            <img src="images/team-3.png" alt="Operations" onerror="this.parentElement.classList.add('team-avatar-fallback')" />
+            <div class="team-avatar-letter">O</div>
+          </div>
+          <h3>Operations Lead</h3>
+          <span class="team-role">Assembly &amp; QC</span>
+          <p>Ensures every tumbler that ships is built to spec, tested, and packed with care. Quality isn't a process — it's a habit.</p>
+        </div>
+      </div>
+      <p class="team-note">We're a small but passionate team. Every tumbler is touched by human hands, not a factory floor.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="logo-mark">BE</span>
+          <span class="logo-text">Blue Endeavor</span>
+          <p>Smart tumblers with interactive OLED faces, temperature sensing, and hydration reminders.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Pages</h4>
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">TK</a>
+            <a href="#" class="social-icon">SP</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Blue Endeavor. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
